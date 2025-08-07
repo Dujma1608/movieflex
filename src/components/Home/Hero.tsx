@@ -1,12 +1,12 @@
 export default function Hero() {
   return (
-    <div className="relative h-[70%]">
+    <div className="relative h-[72%]">
       <div
         className="absolute h-[100%] inset-0 bg-cover bg-center blur-[6px] opacity-50 -z-10"
         style={{ backgroundImage: "url('/images/hero.jpg')" }}
       >
         <div
-          className="absolute bottom-0 left-0 w-full h-10"
+          className="absolute bottom-0 left-0 w-full h-15"
           style={{
             background:
               "linear-gradient(to top, rgba(0,0,0,100), rgba(37, 37, 37, 0))",
