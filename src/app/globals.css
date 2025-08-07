@@ -23,12 +23,12 @@
 }
 
 .hide-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 @layer utilities {
-  @media (min-width: 429px) and (max-width: 639px) {
+  @media (min-width: 400px) and (max-width: 639px) {
     .right-0-mid {
       right: 0 !important;
     }

@@ -30,7 +30,7 @@ export default function NavBar() {
     >
       <Link
         href="/"
-        className="text-[28px] lg:text-[36px] font-bold text-white cursor-pointer"
+        className="text-[26px] md:text-[30px] lg:text-[36px] font-bold text-white cursor-pointer"
       >
         MovieFlex
       </Link>
@@ -44,7 +44,7 @@ export default function NavBar() {
         <div>
           <Link
             href="/most-watched"
-            className="text-[18px] font-medium text-white cursor-pointer"
+            className="text-[16px] lg:text-[18px] font-medium text-white cursor-pointer"
           >
             Most watched
           </Link>
@@ -52,7 +52,7 @@ export default function NavBar() {
         <div
           ref={dropdownRef}
           onClick={() => setShowFavorites((prev) => !prev)}
-          className="relative flex gap-2 items-center text-white text-[18px] font-medium cursor-pointer"
+          className="relative flex gap-2 items-center text-white text-[16px] lg:text-[18px] font-medium cursor-pointer"
         >
           Favorites
           <Image

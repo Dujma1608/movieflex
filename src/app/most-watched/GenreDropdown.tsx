@@ -35,7 +35,9 @@ function GenreDropdown({ genresFilter, setGenresFilter }: Props) {
       onClick={() => setShowGenres((prev) => !prev)}
       className="relative flex items-center gap-2 cursor-pointer border-2 p-1 border-white/60 min-w-[100px]"
     >
-      <p className="text-[18px] pl-1 text-white/60 font-semibold">Genre</p>
+      <p className="text-[15px] lg:text-[18px] pl-1 text-white/60 font-semibold">
+        Genre
+      </p>
       <Image
         className={`${
           showGenres ? "rotate-180" : ""

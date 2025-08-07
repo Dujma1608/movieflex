@@ -38,7 +38,7 @@ export default function ReleaseYearDropdown({
       }}
     >
       <div className="flex items-center gap-2 cursor-pointer border-2 p-1 border-white/60 min-w-[160px] w-fit">
-        <p className="text-[18px] pl-1 text-white/60 font-semibold">
+        <p className="text-[15px] lg:text-[18px] pl-1 text-white/60 font-semibold">
           Release year
         </p>
         <Image

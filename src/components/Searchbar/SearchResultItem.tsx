@@ -11,6 +11,7 @@ interface SearchResultItemProps {
   index: number;
   selectedIndex: number;
   setSelectedIndex: (index: number) => void;
+  setShowSearches: (value: boolean) => void;
   itemRef: (el: HTMLDivElement | null) => void;
 }
 
@@ -19,9 +20,15 @@ export default function SearchResultItem({
   index,
   selectedIndex,
   setSelectedIndex,
+  setShowSearches,
   itemRef,
 }: SearchResultItemProps) {
   const router = useRouter();
+
+  const handleSelect = () => {
+    router.push(`/movie/${movie.id}`);
+    setShowSearches(false);
+  };
 
   return (
     <div
@@ -33,7 +40,7 @@ export default function SearchResultItem({
       role="option"
       aria-selected={index === selectedIndex}
       onMouseEnter={() => setSelectedIndex(index)}
-      onClick={() => router.push(`/movie/${movie.id}`)}
+      onClick={handleSelect}
     >
       <div className="flex gap-4 p-2">
         <img

@@ -11,7 +11,7 @@ export default function FavoritesList() {
   };
 
   return (
-    <div className="absolute top-12 bg-gray-900 p-3 -right-23 right-0-mid lg:right-0 max-h-[260px] lg:max-h-[380px] w-max overflow-y-auto shadow-xl">
+    <div className="absolute top-12 bg-gray-900 p-3 -right-29 right-0-mid lg:right-0 max-h-[260px] lg:max-h-[380px] w-max overflow-y-auto shadow-xl">
       <ul className="flex flex-col gap-4">
         {favorites.length > 0 ? (
           favorites.map((movie) => (
