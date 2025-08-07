@@ -44,7 +44,7 @@ export default function MovieDetails({ movie, credits }: MoviePageProps) {
 
   return (
     <div className="relative pb-20">
-      <div className="flex justify-end pt-35 sm:pt-0 absolute lg:w-2/3 xxl:w-4/5 z-40 right-0 top-0 w-full h-[70%]">
+      <div className="flex justify-end pt-31 sm:pt-36 sm:pt-0 absolute lg:w-2/3 xxl:w-4/5 z-40 right-0 top-0 w-full h-[70%]">
         {backdropUrl && (
           <img src={backdropUrl} alt="backdrop" className="object-cover" />
         )}
@@ -66,7 +66,7 @@ export default function MovieDetails({ movie, credits }: MoviePageProps) {
       </div>
 
       <div className="relative z-80 ">
-        <div className="flex flex-col gap-12 px-6 md:px-35 pt-50 lg:pt-40">
+        <div className="flex flex-col gap-12 px-6 md:px-35 pt-40 lg:pt-40">
           <div
             className="rounded-[5px] w-30 md:w-50 lg:w-60 h-60 md:h-70 lg:h-80 xxl:h-90 h-full aspect-[166/236] opacity-75 bg-cover bg-center"
             style={{
@@ -75,7 +75,7 @@ export default function MovieDetails({ movie, credits }: MoviePageProps) {
           />
           <div className="w-full">
             <div className="flex justify-between gap-2 items-center w-full border-b-2 pb-2">
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+              <h1 className="text-xl md:text-3xl lg:text-4xl font-bold">
                 {movie.original_title}
               </h1>
 
@@ -104,7 +104,9 @@ export default function MovieDetails({ movie, credits }: MoviePageProps) {
                   <p className="text-white/70">{movie.runtime} min</p>
                 </div>
               </div>
-              <p className="text-white/80 text-lg">{movie.overview}</p>
+              <p className="text-white/80 text-[16px] lg:text-lg">
+                {movie.overview}
+              </p>
               <p className="text-white/70 text-md">
                 Score: {movie.vote_average}
               </p>
@@ -114,9 +116,7 @@ export default function MovieDetails({ movie, credits }: MoviePageProps) {
               </p>
             </div>
             <div className="pt-6">
-              <h2 className="text-2xl font-semibold text-white mb-2">
-                Credits
-              </h2>
+              <h2 className="text-xl font-semibold text-white mb-2">Credits</h2>
 
               <p className="text-white/70">
                 <span className="font-medium text-white">Director:</span>{" "}

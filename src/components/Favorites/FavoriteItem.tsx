@@ -15,7 +15,7 @@ export default function FavoriteItem({ movie, onRemove }: Props) {
         className="flex gap-4 p-1.5"
         onClick={() => router.push(`/movie/${movie.id}`)}
       >
-        <Image
+        <img
           width={60}
           height={90}
           src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
