@@ -1,0 +1,42 @@
+
+FROM node:18-alpine AS builder
+
+WORKDIR /app
+
+ARG NEXT_PUBLIC_TMDB_API_KEY
+ARG TMDB_API_KEY
+ARG TMDB_API_READ_ACCESS_TOKEN
+
+ENV NEXT_PUBLIC_TMDB_API_KEY=$NEXT_PUBLIC_TMDB_API_KEY
+ENV TMDB_API_KEY=$TMDB_API_KEY
+ENV TMDB_API_READ_ACCESS_TOKEN=$TMDB_API_READ_ACCESS_TOKEN
+
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+RUN npm run build
+
+FROM node:18-alpine AS runner
+
+WORKDIR /app
+
+COPY --from=builder /app/package*.json ./
+COPY --from=builder /app/.next .next
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/node_modules ./node_modules
+
+ARG NEXT_PUBLIC_TMDB_API_KEY
+ARG TMDB_API_KEY
+ARG TMDB_API_READ_ACCESS_TOKEN
+
+ENV NODE_ENV=production
+ENV NEXT_PUBLIC_TMDB_API_KEY=$NEXT_PUBLIC_TMDB_API_KEY
+ENV TMDB_API_KEY=$TMDB_API_KEY
+ENV TMDB_API_READ_ACCESS_TOKEN=$TMDB_API_READ_ACCESS_TOKEN
+
+EXPOSE 3000
+
+CMD ["npm", "start"]

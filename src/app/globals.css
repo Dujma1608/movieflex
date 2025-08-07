@@ -4,6 +4,36 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+::-webkit-scrollbar {
+  width: 7px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 12px;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@layer utilities {
+  @media (min-width: 429px) and (max-width: 639px) {
+    .right-0-mid {
+      right: 0 !important;
+    }
+  }
+}
 
 @theme inline {
   --color-background: var(--background);

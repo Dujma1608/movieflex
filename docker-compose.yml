@@ -1,0 +1,19 @@
+services:
+  app:
+    build:
+      context: .
+      args:
+        NEXT_PUBLIC_TMDB_API_KEY: ${NEXT_PUBLIC_TMDB_API_KEY}
+        TMDB_API_KEY: ${TMDB_API_KEY}
+        TMDB_API_READ_ACCESS_TOKEN: ${TMDB_API_READ_ACCESS_TOKEN}
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_TMDB_API_KEY=${NEXT_PUBLIC_TMDB_API_KEY}
+      - TMDB_API_KEY=${TMDB_API_KEY}
+      - TMDB_API_READ_ACCESS_TOKEN=${TMDB_API_READ_ACCESS_TOKEN}
+    command: npm start
+
+networks:
+  app-network:
+    driver: bridge
