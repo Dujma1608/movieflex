@@ -102,7 +102,7 @@ export default function MostWatchedClient() {
         </button>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 xxl:grid-cols-8 gap-5 mt-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xxl:grid-cols-8 gap-5 mt-6">
         {movies.map((movie) => (
           <MoviePoster
             key={movie.id}

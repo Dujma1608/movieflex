@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="relative h-[50%] lg:h-[70vh]">
+    <div className="relative h-[70%]">
       <div
         className="absolute h-[100%] inset-0 bg-cover bg-center blur-[6px] opacity-50 -z-10"
         style={{ backgroundImage: "url('/images/hero.jpg')" }}
@@ -14,14 +14,14 @@ export default function Hero() {
         />
       </div>
 
-      <main className="z-10 flex flex-col items-center justify-center h-screen text-white">
-        <h1 className="px-2 text-[32px] lg:text-[50px] text-center font-bold mb-4">
+      <div className="z-10 flex flex-col items-center justify-center h-screen text-white">
+        <h1 className="px-2 text-[28px] md:text-[30px] lg:text-[40px] text-center font-bold mb-2">
           Welcome to MovieFlex
         </h1>
-        <p className="text-lg lg:text-xl max-w-xl text-center mb-15">
+        <p className="text-[15px] md:text-[18px] lg:text-[22px] max-w-xl text-center mb-15">
           Discover your favorite movies with ease.
         </p>
-      </main>
+      </div>
     </div>
   );
 }

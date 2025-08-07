@@ -10,9 +10,9 @@ interface Props {
 export default function FavoriteItem({ movie, onRemove }: Props) {
   const router = useRouter();
   return (
-    <li className="flex items-center justify-between gap-10 pr-2 hover:bg-gray-700">
+    <li className="flex items-center justify-between gap-5 lg:gap-10 pr-2 hover:bg-gray-700">
       <div
-        className="flex gap-4  p-2"
+        className="flex gap-4 p-1.5"
         onClick={() => router.push(`/movie/${movie.id}`)}
       >
         <Image

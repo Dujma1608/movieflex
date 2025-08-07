@@ -27,14 +27,6 @@
   scrollbar-width: none;
 }
 
-@layer utilities {
-  @media (min-width: 400px) and (max-width: 639px) {
-    .right-0-mid {
-      right: 0 !important;
-    }
-  }
-}
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

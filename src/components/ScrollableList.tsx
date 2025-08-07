@@ -32,7 +32,7 @@ export default function ScrollableList({ children }: Props) {
 
   return (
     <div
-      className="relative h-60 md:h-70 lg:h-80 xxl:h-90"
+      className="relative h-60 lg:h-70 xxl:h-80"
       onMouseEnter={handleScroll}
       onMouseLeave={() => setShowArrows({ left: false, right: false })}
     >

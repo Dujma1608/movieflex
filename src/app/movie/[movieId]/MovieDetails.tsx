@@ -68,7 +68,7 @@ export default function MovieDetails({ movie, credits }: MoviePageProps) {
       <div className="relative z-80 ">
         <div className="flex flex-col gap-12 px-6 md:px-35 pt-50 lg:pt-40">
           <div
-            className="rounded-[5px] w-35 md:w-50 lg:w-65 h-60 md:h-80 lg:h-90 h-full aspect-[166/236] opacity-75 bg-cover bg-center"
+            className="rounded-[5px] w-30 md:w-50 lg:w-60 h-60 md:h-70 lg:h-80 xxl:h-90 h-full aspect-[166/236] opacity-75 bg-cover bg-center"
             style={{
               backgroundImage: `url(https://image.tmdb.org/t/p/w342${movie.poster_path})`,
             }}

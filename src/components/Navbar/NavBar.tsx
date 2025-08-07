@@ -34,12 +34,6 @@ export default function NavBar() {
       >
         MovieFlex
       </Link>
-
-      <div className="w-full sm:w-[60%] md:w-[50%] max-w-[650px] order-last sm:order-none">
-        <Suspense fallback={null}>
-          <SearchBar />
-        </Suspense>
-      </div>
       <div className="flex gap-8">
         <div>
           <Link
@@ -63,6 +57,11 @@ export default function NavBar() {
           />
           {showFavorites && <FavoritesList />}
         </div>
+      </div>
+      <div className="w-full sm:w-[60%] md:w-[50%] max-w-[500px] order-last sm:order-none">
+        <Suspense fallback={null}>
+          <SearchBar />
+        </Suspense>
       </div>
     </nav>
   );

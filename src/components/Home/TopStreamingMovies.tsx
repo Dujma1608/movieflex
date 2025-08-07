@@ -48,7 +48,7 @@ function TopStreamingMovies() {
           {topMoviesByProvider.map((movie, index) => (
             <div
               key={movie.id}
-              className="flex items-baseline h-60 md:h-70 lg:h-80 xxl:h-90"
+              className="flex items-baseline h-60 md:h-60 lg:h-70 xxl:h-80"
             >
               <p className="text-white/20 text-[180px] ml-5 font-bold">
                 {index + 1}
