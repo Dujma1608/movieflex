@@ -24,8 +24,8 @@ This app fetches and displays movie data from The Movie Database (TMDb) API.
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+git clone https://github.com/Dujma1608/movieflex.git
+cd movieflex
 
 ```
 
@@ -41,8 +41,10 @@ yarn install
 3. Create a .env.local file in the root directory and add your API keys:
 
 ```bash
-NEXT_PUBLIC_TMDB_API_KEY=your_tmdb_api_key_here
-TMDB_API_READ_ACCESS_TOKEN=your_read_access_token_here
+NEXT_PUBLIC_TMDB_API_KEY=6a2540c662623849a2fc6007cb94ea25
+TMDB_API_KEY=6a2540c662623849a2fc6007cb94ea25
+TMDB_API_READ_ACCESS_TOKEN=eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YTI1NDBjNjYyNjIzODQ5YTJmYzYwMDdjYjk0ZWEyNSIsIm5iZiI6MTc1Mzc5Mjk2Ny45ODIsInN1YiI6IjY4ODhjMWM3ODdiOTgxMjc5YzU1ZmM5YyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.rusT1y_57PEo6k6hSOcb4r9BNkkQ3O1_ik0pt-n2oxo
+
 
 ```
 
@@ -54,3 +56,18 @@ npm run dev
 yarn dev
 
 ```
+
+## Running with Docker
+
+If you prefer to run the app inside a Docker container, follow these steps:
+
+1. Make sure Docker and Docker Compose are installed on your machine.
+
+2. Build and start the Docker container:
+
+```bash
+docker-compose up --build
+
+```
+
+3. Open your browser and visit http://localhost:3000 to access the app
