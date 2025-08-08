@@ -47,16 +47,16 @@ function SearchPageClient({ query }: SearchPageClientProps) {
       <ul className="flex flex-col gap-5 justify-start">
         {searchMovies.map((movie: MovieListItem) => (
           <li key={movie.id}>
-            <Link href={`/movie/${movie.id}`}>
-              <div className="flex h-60 md:h-70 lg:h-80 rounded shadow transition border-b-2 border-white/10 pb-4">
-                <MoviePoster
-                  key={movie.id}
-                  id={movie.id}
-                  title={movie.title}
-                  poster={movie.poster_path}
-                  release_date={movie.release_date}
-                />
-                <div className="p-2 ml-4 text-white">
+            <div className="flex h-60 md:h-70 lg:h-80 rounded shadow transition border-b-2 border-white/10 pb-4">
+              <MoviePoster
+                key={movie.id}
+                id={movie.id}
+                title={movie.title}
+                poster={movie.poster_path}
+                release_date={movie.release_date}
+              />
+              <Link className="w-full h-full" href={`/movie/${movie.id}`}>
+                <div className="p-2 ml-4 text-white w-full">
                   <h2 className="font-semibold text-xl">
                     {movie.title}{" "}
                     <span className="text-white/50 font-normal">
@@ -65,8 +65,8 @@ function SearchPageClient({ query }: SearchPageClientProps) {
                   </h2>
                   <p className="text-white/60">Score: {movie.vote_average}</p>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           </li>
         ))}
       </ul>

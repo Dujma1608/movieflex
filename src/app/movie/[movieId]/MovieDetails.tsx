@@ -44,7 +44,7 @@ export default function MovieDetails({ movie, credits }: MoviePageProps) {
 
   return (
     <div className="relative pb-20">
-      <div className="flex justify-end pt-31 sm:pt-36 sm:pt-0 absolute lg:w-2/3 xxl:w-4/5 z-40 right-0 top-0 w-full h-[70%]">
+      <div className="flex justify-end pt-30 sm:pt-0 absolute lg:w-2/3 xxl:w-4/5 z-40 right-0 top-0 w-full h-[70%]">
         {backdropUrl && (
           <img src={backdropUrl} alt="backdrop" className="object-cover" />
         )}
@@ -68,7 +68,7 @@ export default function MovieDetails({ movie, credits }: MoviePageProps) {
       <div className="relative z-80 ">
         <div className="flex flex-col gap-12 px-6 md:px-35 pt-40 lg:pt-40">
           <div
-            className="rounded-[5px] w-30 md:w-50 lg:w-60 h-60 md:h-70 lg:h-80 xxl:h-90 h-full aspect-[166/236] opacity-75 bg-cover bg-center"
+            className="rounded-[5px] mt-6 sm:mt-2 w-35 md:w-50 lg:w-60 h-60 md:h-70 lg:h-80 xxl:h-90 h-full aspect-[166/236] opacity-75 bg-cover bg-center"
             style={{
               backgroundImage: `url(https://image.tmdb.org/t/p/w342${movie.poster_path})`,
             }}

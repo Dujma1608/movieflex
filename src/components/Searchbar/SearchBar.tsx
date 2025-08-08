@@ -9,13 +9,10 @@ import Image from "next/image";
 import SearchResultItem from "./SearchResultItem";
 
 function SearchBar() {
-  const searchParams = useSearchParams();
-  const queryParam = searchParams.get("q");
-
   const { movieStore } = useStore();
   const { getSearchedResults, searchResults, clearSearch } = movieStore;
 
-  const [query, setQuery] = useState(queryParam ?? "");
+  const [query, setQuery] = useState("");
   const [showSearches, setShowSearches] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState<number>(-1);
 
