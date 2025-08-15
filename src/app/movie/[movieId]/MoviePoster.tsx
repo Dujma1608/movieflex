@@ -19,11 +19,13 @@ export default function MoviePoster({
   release_date,
 }: Props) {
   const { addToFavorites, removeFromFavorites, isFavorite } = useFavorites();
-
+  const [isFavorited, setIsFavorited] = useState(false);
   const releaseYear = release_date?.split("-")[0] ?? "Unknown";
   const router = useRouter();
 
-  const isFavorited = isFavorite(id);
+  useEffect(() => {
+    setIsFavorited(isFavorite(id));
+  }, [id, isFavorite]);
 
   const handleFavorite = (e: React.MouseEvent<HTMLDivElement>) => {
     e.stopPropagation();
