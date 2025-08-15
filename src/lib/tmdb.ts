@@ -13,7 +13,7 @@ export async function getDiscoverMovies(
   try {
     const res = await axios.get(`${BASE_URL}/discover/movie`, {
       params: {
-        api_key: API_KEY, // Use API key param for v3
+        api_key: API_KEY,
         language: "en-US",
         sort_by: "release_date.desc",
         page,
@@ -21,7 +21,6 @@ export async function getDiscoverMovies(
         primary_release_year: releaseYear,
         "vote_average.gte": minScore,
       },
-      // Remove headers with Bearer token
     });
 
     const filteredResults = res.data.results.filter(
