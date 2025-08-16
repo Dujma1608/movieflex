@@ -22,7 +22,7 @@ export function useInfiniteScroll({
       },
       {
         rootMargin: "200px",
-        threshold: 0.1,
+        threshold: 0,
       }
     );
 

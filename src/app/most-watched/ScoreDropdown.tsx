@@ -34,7 +34,7 @@ export default function ScoreDropdown({ scoreFilter, setScoreFilter }: Props) {
         } transform transition duration-200`}
         width={30}
         height={30}
-        src="/arrow-down.svg"
+        src="/icons/arrow-down.svg"
         alt="arrow-down"
       />
       {showScoreDropdown && (
