@@ -1,7 +1,7 @@
-import Hero from "@/components/Home/Hero";
-import TopStreamingMovies from "@/components/Home/TopStreamingMovies";
-import GenreMovieSection from "@/components/Home/GenreMovieSection";
-import NewestMovies from "@/components/Home/NewestMovies";
+import Hero from "@/app/(home)/Hero";
+import TopStreamingMovies from "@/app/(home)/TopStreamingMovies";
+import NewestMovies from "./NewestMovies";
+import GenreMovieSection from "./GenreMovieSection";
 
 export default async function Home() {
   return (

@@ -1,7 +1,7 @@
-import { MovieListItem } from "@/app/models/Movie";
-import MoviePoster from "@/app/movie/[movieId]/MoviePoster";
+import { MovieListItem } from "@/models/Movie";
+import MoviePoster from "@/components/movie-poster/MoviePoster";
+import ScrollableList from "@/components/scrollable-list/ScrollableList";
 import { getDiscoverMovies } from "@/lib/tmdb";
-import ScrollableList from "../ScrollableList";
 
 export default async function NewestMovies() {
   const movies = await getDiscoverMovies();

@@ -13,7 +13,7 @@ import {
   addFavorite,
   removeFavorite,
   isFavorites,
-} from "@/app/utils/favoriteStorage";
+} from "@/utils/favoriteStorage";
 
 interface FavoriteContext {
   favorites: FavoriteMovie[];

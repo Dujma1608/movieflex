@@ -2,9 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useOutsideClick } from "@/app/hooks/useOutsideClick";
+import { useOutsideClick } from "@/hooks/useOutsideClick";
 import { observer } from "mobx-react-lite";
-import { useStore } from "@/app/stores/store";
+import { useStore } from "@/stores/store";
 import Image from "next/image";
 import SearchResultItem from "./SearchResultItem";
 

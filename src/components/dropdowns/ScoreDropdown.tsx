@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useOutsideClick } from "../hooks/useOutsideClick";
+import { useOutsideClick } from "../../hooks/useOutsideClick";
 import Slider from "rc-slider";
 import Image from "next/image";
 

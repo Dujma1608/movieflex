@@ -2,9 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import { observer } from "mobx-react-lite";
-import { useStore } from "@/app/stores/store";
-import { MovieProvider } from "@/app/models/MovieProvider";
-import { useOutsideClick } from "@/app/hooks/useOutsideClick";
+import { useStore } from "@/stores/store";
+import { MovieProvider } from "@/models/MovieProvider";
+import { useOutsideClick } from "@/hooks/useOutsideClick";
 import { useToast } from "@/context/ToastContext";
 import Image from "next/image";
 

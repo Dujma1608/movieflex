@@ -4,7 +4,7 @@
 
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { MovieListItem } from "@/app/models/Movie";
+import { MovieListItem } from "@/models/Movie";
 
 interface SearchResultItemProps {
   movie: MovieListItem;

@@ -3,11 +3,11 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { observer } from "mobx-react-lite";
-import { useStore } from "../stores/store";
+import { useStore } from "../../stores/store";
 import Image from "next/image";
-import { MovieListItem } from "../models/Movie";
-import { useInfiniteScroll } from "../hooks/useInfiniteScroll";
-import MoviePoster from "../movie/[movieId]/MoviePoster";
+import { MovieListItem } from "../../models/Movie";
+import { useInfiniteScroll } from "../../hooks/useInfiniteScroll";
+import MoviePoster from "../../components/movie-poster/MoviePoster";
 
 interface SearchPageClientProps {
   query: string | null;

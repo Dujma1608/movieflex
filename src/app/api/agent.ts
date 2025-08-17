@@ -1,8 +1,8 @@
 import axios, { AxiosResponse } from "axios";
-import { MovieProvidersResponse } from "../models/MovieProvider";
-import { MovieListItem, MovieSearchResponse } from "../models/Movie";
+import { MovieProvidersResponse } from "../../models/MovieProvider";
+import { MovieListItem, MovieSearchResponse } from "../../models/Movie";
 import { toast } from "react-toastify";
-import { GenresResponse } from "../models/Genre";
+import { GenresResponse } from "../../models/Genre";
 
 axios.defaults.baseURL = "https://api.themoviedb.org/3";
 

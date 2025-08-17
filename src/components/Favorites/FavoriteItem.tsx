@@ -1,5 +1,4 @@
-import { FavoriteMovie } from "@/app/utils/favoriteStorage";
-import Image from "next/image";
+import { FavoriteMovie } from "@/utils/favoriteStorage";
 import { useRouter } from "next/navigation";
 
 interface Props {

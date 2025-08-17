@@ -1,5 +1,5 @@
 "use client";
-import { FavoriteMovie } from "@/app/utils/favoriteStorage";
+import { FavoriteMovie } from "@/utils/favoriteStorage";
 import { useFavorites } from "@/context/FavoriteContext";
 import Image from "next/image";
 import { useRouter } from "next/navigation";

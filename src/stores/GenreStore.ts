@@ -1,5 +1,5 @@
 import { makeAutoObservable, runInAction } from "mobx";
-import agent from "../api/agent";
+import agent from "../app/api/agent";
 import { GenresResponse } from "../models/Genre";
 
 export default class GenreStore {

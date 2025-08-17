@@ -2,13 +2,13 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import MoviePoster from "../movie/[movieId]/MoviePoster";
+import MoviePoster from "../../components/movie-poster/MoviePoster";
 import { getDiscoverMovies } from "@/lib/tmdb";
-import GenreDropdown from "./GenreDropdown";
-import ReleaseYearDropdown from "./ReleaseYearDropdown";
-import ScoreDropdown from "./ScoreDropdown";
-import { MovieListItem } from "../models/Movie";
-import { useInfiniteScroll } from "../hooks/useInfiniteScroll";
+import GenreDropdown from "../../components/dropdowns/GenreDropdown";
+import ReleaseYearDropdown from "../../components/dropdowns/ReleaseYearDropdown";
+import ScoreDropdown from "../../components/dropdowns/ScoreDropdown";
+import { MovieListItem } from "../../models/Movie";
+import { useInfiniteScroll } from "../../hooks/useInfiniteScroll";
 import Image from "next/image";
 
 export default function MostWatchedClient() {

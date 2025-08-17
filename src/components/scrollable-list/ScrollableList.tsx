@@ -22,7 +22,6 @@ export default function ScrollableList({ children }: Props) {
   };
 
   useEffect(() => {
-    handleScroll();
     const ref = containerRef.current;
     if (ref) {
       ref.addEventListener("scroll", handleScroll);

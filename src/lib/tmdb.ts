@@ -1,4 +1,4 @@
-import { MovieListItem } from "@/app/models/Movie";
+import { MovieListItem } from "@/models/Movie";
 import axios from "axios";
 
 const API_KEY = process.env.TMDB_API_KEY;

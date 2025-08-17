@@ -2,10 +2,10 @@
 
 import { Suspense, useEffect, useState } from "react";
 import Link from "next/link";
-import SearchBar from "../Searchbar/SearchBar";
-import FavoritesList from "../Favorites/FavoriteList";
+import SearchBar from "../searchbar/SearchBar";
+import FavoritesList from "../favorites/FavoriteList";
 import Image from "next/image";
-import { useOutsideClick } from "@/app/hooks/useOutsideClick";
+import { useOutsideClick } from "@/hooks/useOutsideClick";
 
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(false);

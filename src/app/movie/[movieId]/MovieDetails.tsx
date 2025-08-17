@@ -1,11 +1,9 @@
 "use client";
 
-import { MovieCredits } from "@/app/models/MovieCredits";
-import { MovieDetail } from "@/app/models/MovieDetails";
-import { FavoriteMovie } from "@/app/utils/favoriteStorage";
+import { MovieCredits } from "@/models/MovieCredits";
+import { MovieDetail } from "@/models/MovieDetails";
+import { FavoriteMovie } from "@/utils/favoriteStorage";
 import { useFavorites } from "@/context/FavoriteContext";
-import Image from "next/image";
-import { useEffect, useState } from "react";
 
 interface MoviePageProps {
   movie: MovieDetail;

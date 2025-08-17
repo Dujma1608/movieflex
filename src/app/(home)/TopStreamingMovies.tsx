@@ -1,10 +1,10 @@
 "use client";
 
-import MoviePoster from "@/app/movie/[movieId]/MoviePoster";
-import StreamingServices from "./StreamingServices";
+import MoviePoster from "@/components/movie-poster/MoviePoster";
+import StreamingServices from "../../components/dropdowns/StreamingServicesDropdown";
 import { useEffect, useState } from "react";
-import { MovieProvider } from "@/app/models/MovieProvider";
-import { useStore } from "@/app/stores/store";
+import { MovieProvider } from "@/models/MovieProvider";
+import { useStore } from "@/stores/store";
 import { observer } from "mobx-react-lite";
 
 function TopStreamingMovies() {

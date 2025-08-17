@@ -1,6 +1,6 @@
 import { makeAutoObservable, runInAction } from "mobx";
 import { MovieProvider } from "../models/MovieProvider";
-import agent from "../api/agent";
+import agent from "../app/api/agent";
 import { MovieListItem } from "../models/Movie";
 
 export default class ProviderStore {

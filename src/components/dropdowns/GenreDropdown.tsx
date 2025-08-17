@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { useOutsideClick } from "../hooks/useOutsideClick";
-import { useStore } from "../stores/store";
+import { useOutsideClick } from "../../hooks/useOutsideClick";
+import { useStore } from "../../stores/store";
 import { observer } from "mobx-react-lite";
 import Image from "next/image";
 
