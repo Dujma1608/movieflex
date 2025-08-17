@@ -19,7 +19,7 @@ export default class GenreStore {
     } catch (error: unknown) {
       runInAction(() => {
         if (error instanceof Error) {
-          this.error = `Failed to load genres: ${error.message}`;
+          this.error = `Failed to load genress: ${error.message}`;
         } else {
           this.error = "Failed to load genres.";
         }
