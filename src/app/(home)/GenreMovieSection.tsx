@@ -6,10 +6,12 @@ import { getMovieGenres, popularMoviesByGenre } from "@/lib/tmdb";
 
 export default async function GenreMovieSection() {
   const genres: Genre[] = await getMovieGenres();
+  const MAX_GENRES = 10;
+  const FIRST_PAGE = 1;
 
   const moviesByGenre = await Promise.all(
-    genres.slice(0, 10).map(async (genre) => {
-      const movies = await popularMoviesByGenre(1, genre.id);
+    genres.slice(0, MAX_GENRES).map(async (genre) => {
+      const movies = await popularMoviesByGenre(FIRST_PAGE, genre.id);
       return {
         genre,
         movies: movies.results as MovieListItem[],

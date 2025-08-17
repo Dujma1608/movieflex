@@ -12,8 +12,8 @@ const defaultOptions: ToastOptions = {
 };
 
 interface ToastContextProps {
-  success: (message: string, options?: ToastOptions) => void;
-  error: (message: string, options?: ToastOptions) => void;
+  success: (message: string) => void;
+  error: (message: string) => void;
 }
 
 const ToastContext = createContext<ToastContextProps | null>(null);
@@ -23,12 +23,12 @@ interface ToastProviderProps {
 }
 
 export function ToastProvider({ children }: ToastProviderProps) {
-  const success = (message: string, options?: ToastOptions) => {
-    toast.success(message, { ...defaultOptions, ...options });
+  const success = (message: string) => {
+    toast.success(message, defaultOptions);
   };
 
-  const error = (message: string, options?: ToastOptions) => {
-    toast.error(message, { ...defaultOptions, ...options });
+  const error = (message: string) => {
+    toast.error(message, defaultOptions);
   };
 
   return (
